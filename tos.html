@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Terms of Service</title>
+  <style>
+    :root {
+      --bg: #0f1115;
+      --card: #171923;
+      --text: #e6e8ee;
+      --muted: #aab0c0;
+      --accent: #7c5cff;
+      --good: #62d394;
+      --warn: #ffb454;
+      --bad: #ff6b6b;
+      --border: #23273a;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      background: radial-gradient(1200px 600px at 15% 0%, #141827 0%, var(--bg) 60%);
+      color: var(--text);
+      line-height: 1.55;
+    }
+    .wrap {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    header {
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 2rem;
+      margin: 0 0 8px;
+      letter-spacing: 0.2px;
+    }
+    .subtitle {
+      color: var(--muted);
+      font-size: 0.975rem;
+    }
+    .card {
+      background: linear-gradient(180deg, #171a26 0%, var(--card) 100%);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 22px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    }
+    .notice {
+      background: rgba(124,92,255,0.1);
+      border-left: 3px solid var(--accent);
+      padding: 14px 16px;
+      border-radius: 10px;
+      margin: 0 0 18px;
+      color: var(--text);
+    }
+    ul.rules {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .rule {
+      display: grid;
+      grid-template-columns: 40px 1fr;
+      gap: 12px;
+      padding: 14px 10px;
+      border-bottom: 1px dashed var(--border);
+    }
+    .rule:last-child { border-bottom: 0; }
+    .icon {
+      width: 40px;
+      height: 40px;
+      display: grid;
+      place-items: center;
+      border-radius: 10px;
+      background: #1e2232;
+      border: 1px solid var(--border);
+      font-size: 20px;
+    }
+    .rule h3 {
+      margin: 0 0 4px;
+      font-size: 1.05rem;
+    }
+    .rule p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.975rem;
+    }
+    .bad { color: var(--bad); }
+    .warn { color: var(--warn); }
+    .accent { color: var(--accent); }
+    .side-note {
+      margin-top: 20px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+    }
+    .banned {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 10px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+    .tag {
+      background: #1c2030;
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: 0.9rem;
+    }
+    footer {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Terms of Service</h1>
+      <p class="subtitle">By using our serverside, you agree to follow the rules listed below.</p>
+    </header>
+
+    <section class="card">
+      <p class="notice">
+        Violations may result in an immediate blacklist, server ban, or other administrative action.
+      </p>
+
+      <ul class="rules">
+        <li class="rule">
+          <div class="icon">✏️</div>
+          <div>
+            <h3>No Backdoors</h3>
+            <p>
+              Injecting, creating, or placing any form of backdoor into games is strictly prohibited.
+              This includes any code or object that allows unauthorized access or remote control.
+            </p>
+          </div>
+        </li>
+
+        <li class="rule">
+          <div class="icon">✏️</div>
+          <div>
+            <h3>No External Executors</h3>
+            <p>
+              Using third-party or external executors with our serverside is not allowed.
+              All activity must remain within the provided systems to ensure security and fairness.
+            </p>
+          </div>
+        </li>
+
+        <li class="rule">
+          <div class="icon">✏️</div>
+          <div>
+            <h3>No Destroying Maps</h3>
+            <p>
+              Do not intentionally delete, break, or otherwise damage game maps or essential assets.
+              Respect the game environments at all times.
+            </p>
+          </div>
+        </li>
+
+        <li class="rule">
+          <div class="icon">✏️</div>
+          <div>
+            <h3>No Abuse of Permissions</h3>
+            <p>
+              Do not abuse admin commands (e.g., <span class="warn">:fly all</span>,
+              <span class="bad">:explode all</span>, <span class="bad">:kick all</span>,
+              <span class="warn">:tp all</span>).
+            </p>
+          </div>
+        </li>
+
+        <li class="rule">
+          <div class="icon">✏️</div>
+          <div>
+            <h3>No Shutting Down Games</h3>
+            <p>
+              Attempting to shut down games, servers, or any supported game will result in a blacklist.
+            </p>
+          </div>
+        </li>
+
+        <li class="rule">
+          <div class="icon">✏️</div>
+          <div>
+            <h3>Respect Other Users</h3>
+            <p>
+              Toxic behavior, harassment, or disrespect toward others using the serverside won’t be tolerated.
+            </p>
+          </div>
+        </li>
+      </ul>
+
+      <div class="side-note">
+        <h3 class="accent">📌 Side Note</h3>
+        <p class="subtitle">The following tools are not permitted:</p>
+        <ul class="banned">
+          <li class="tag">C00lkidd GUIs</li>
+          <li class="tag">Exser Hub</li>
+          <li class="tag">Sensation Hub</li>
+          <li class="tag">Sensation Hub Safe</li>
+          <li class="tag">Adonis Ranker</li>
+        </ul>
+      </div>
+
+      <footer>
+        By continuing to use the serverside, you acknowledge that you have read and agree to these rules.
+      </footer>
+    </section>
+  </div>
+</body>
+</html>
