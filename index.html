@@ -10,7 +10,6 @@
     <meta property="og:description" content="Frigid is the ultimate ROBLOX Serverside built for all your Exploiting created by known serverside developers" />
     <meta property="og:url" content="https://frigid.lol" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://frigid.lol/frigid.png" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Premium ROBLOX Executor" />
@@ -1108,12 +1107,10 @@
                 const faqItem = this.parentElement;
                 const isActive = faqItem.classList.contains('active');
 
-                // Close all FAQ items
                 document.querySelectorAll('.faq-item').forEach(item => {
                     item.classList.remove('active');
                 });
 
-                // Open clicked item if it wasn't active
                 if (!isActive) {
                     faqItem.classList.add('active');
                 }
